@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>ParliamentTypeSystem</name>
+    <description>Ein UIMA TypeSystem zur Erfassung von Rednern, Redeinhalt und Sitzungsinformationen.</description>
+    <version>1.0</version>
+    <vendor>Ihre Organisation</vendor>
+    <types>
+
+        <!-- ========================================== -->
+        <!-- Typ: Sitzungsinformation                   -->
+        <!-- ========================================== -->
+        <typeDescription>
+            <name>de.projekt.uima.types.Sitzungsinformation</name>
+            <description>Enthält Metadaten zur aktuellen Sitzung (z.B. Plenarsitzung).</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>wahlperiode</name>
+                    <description>Die Nummer der Wahlperiode (Legislaturperiode).</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>sitzungsNummer</name>
+                    <description>Die laufende Nummer der Sitzung.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>datum</name>
+                    <description>Das Datum der Sitzung (z.B. im Format YYYY-MM-DD).</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <!-- ========================================== -->
+        <!-- Typ: Redner                                -->
+        <!-- ========================================== -->
+        <typeDescription>
+            <name>de.projekt.uima.types.Redner</name>
+            <description>Informationen zur sprechenden Person.</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>vorname</name>
+                    <description>Der Vorname des Redners.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>nachname</name>
+                    <description>Der Nachname des Redners.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>partei</name>
+                    <description>Die Fraktion oder Partei des Redners (z.B. SPD, CDU/CSU).</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>funktion</name>
+                    <description>Die Rolle des Redners (z.B. Präsident, Abgeordneter, Minister).</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <!-- ========================================== -->
+        <!-- Typ: Rede                                  -->
+        <!-- ========================================== -->
+        <typeDescription>
+            <name>de.projekt.uima.types.Rede</name>
+            <description>Markiert den eigentlichen Redeinhalt. Die begin- und end-Offsets definieren den gesprochenen Text.</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>redner</name>
+                    <description>Referenz auf die Person, die diese Rede hält.</description>
+                    <rangeTypeName>de.projekt.uima.types.Redner</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>tagesordnungspunkt</name>
+                    <description>Der zugehörige Tagesordnungspunkt (TOP), zu dem gesprochen wird.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>redeTyp</name>
+                    <description>Gibt an, ob es sich um eine reguläre Rede, einen Zwischenruf oder eine Regierungserklärung handelt.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+    </types>
+</typeSystemDescription>
