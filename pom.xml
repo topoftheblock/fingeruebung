@@ -46,7 +46,7 @@
                         <goals><goal>generate</goal></goals>
                         <configuration>
                             <typeSystemIncludes>
-                                <typeSystemInclude>src/main/resources/ParliamentTypeSystem.xml</typeSystemInclude>
+                                <typeSystemInclude>src/main/resources/desc/type/ParliamentTypeSystem.xml</typeSystemInclude>
                             </typeSystemIncludes>
                             <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
                         </configuration>
