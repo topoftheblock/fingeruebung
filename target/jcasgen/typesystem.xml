@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier"/>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+        
+    <imports>
+                
+        <import location="file:/Users/andreasblock/Desktop/6.Semester/Praktikum/fingeruebung/src/main/resources/ParliamentTypeSystem.xml"/>
+            
+    </imports>
+    
+</typeSystemDescription>

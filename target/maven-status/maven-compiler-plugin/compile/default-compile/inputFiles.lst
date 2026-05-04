@@ -1,8 +1,8 @@
-/Users/andreasblock/Desktop/6.Semester/Praktikum/Fingeruebung/src/main/java/org/texttechnologylab/practical/sose26/christian/SpeechExportWriter.java
-/Users/andreasblock/Desktop/6.Semester/Praktikum/Fingeruebung/src/main/java/org/texttechnologylab/practical/sose26/christian/type/Sitzungsinformationen.java
-/Users/andreasblock/Desktop/6.Semester/Praktikum/Fingeruebung/src/main/java/org/texttechnologylab/practical/sose26/christian/PlenarprotokollDuurReader.java
-/Users/andreasblock/Desktop/6.Semester/Praktikum/Fingeruebung/src/main/java/org/texttechnologylab/practical/sose26/christian/type/Redner.java
-/Users/andreasblock/Desktop/6.Semester/Praktikum/Fingeruebung/src/main/java/org/texttechnologylab/practical/sose26/christian/type/Redeinhalt.java
-/Users/andreasblock/Desktop/6.Semester/Praktikum/Fingeruebung/src/main/java/org/texttechnologylab/practical/sose26/christian/XmiWriter.java
-/Users/andreasblock/Desktop/6.Semester/Praktikum/Fingeruebung/src/main/java/org/texttechnologylab/practical/sose26/christian/DUUIConnection.java
-/Users/andreasblock/Desktop/6.Semester/Praktikum/Fingeruebung/src/main/java/org/texttechnologylab/practical/sose26/christian/ProtocolPipeline.java
+/Users/andreasblock/Desktop/6.Semester/Praktikum/fingeruebung/src/main/java/org/texttechnologylab/practical/sose26/christian/type/Redner.java
+/Users/andreasblock/Desktop/6.Semester/Praktikum/fingeruebung/src/main/java/org/texttechnologylab/practical/sose26/christian/XmiWriter.java
+/Users/andreasblock/Desktop/6.Semester/Praktikum/fingeruebung/src/main/java/org/texttechnologylab/practical/sose26/christian/DUUIConnection.java
+/Users/andreasblock/Desktop/6.Semester/Praktikum/fingeruebung/src/main/java/org/texttechnologylab/practical/sose26/christian/ProtocolPipeline.java
+/Users/andreasblock/Desktop/6.Semester/Praktikum/fingeruebung/src/main/java/org/texttechnologylab/practical/sose26/christian/PlenarprotokollDuurReader.java
+/Users/andreasblock/Desktop/6.Semester/Praktikum/fingeruebung/src/main/java/org/texttechnologylab/practical/sose26/christian/type/Redeinhalt.java
+/Users/andreasblock/Desktop/6.Semester/Praktikum/fingeruebung/src/main/java/org/texttechnologylab/practical/sose26/christian/type/Sitzungsinformationen.java
+/Users/andreasblock/Desktop/6.Semester/Praktikum/fingeruebung/src/main/java/org/texttechnologylab/practical/sose26/christian/SpeechExportWriter.java

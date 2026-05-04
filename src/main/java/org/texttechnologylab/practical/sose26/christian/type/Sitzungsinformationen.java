@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Sat May 02 11:29:55 CEST 2026 */
+/* Apache UIMA v3 - First created by JCasGen Mon May 04 12:30:41 CEST 2026 */
 
 package org.texttechnologylab.practical.sose26.christian.type;
  
@@ -19,9 +19,9 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** Session Information
- * Updated by JCasGen Sat May 02 11:29:55 CEST 2026
- * XML source: /Users/andreasblock/Desktop/6.Semester/Praktikum/Fingeruebung/target/jcasgen/typesystem.xml
+/** Enthält Metadaten zur aktuellen Sitzung (z.B. Plenarsitzung).
+ * Updated by JCasGen Mon May 04 12:30:41 CEST 2026
+ * XML source: /Users/andreasblock/Desktop/6.Semester/Praktikum/fingeruebung/target/jcasgen/typesystem.xml
  * @generated */
 public class Sitzungsinformationen extends Annotation {
  
@@ -52,12 +52,18 @@ public class Sitzungsinformationen extends Annotation {
    *   Feature Offsets *
    * *******************/ 
    
+  public final static String _FeatName_wahlperiode = "wahlperiode";
   public final static String _FeatName_sitzungsNummer = "sitzungsNummer";
+  public final static String _FeatName_datum = "datum";
 
 
   /* Feature Adjusted Offsets */
+  private final static CallSite _FC_wahlperiode = TypeSystemImpl.createCallSite(Sitzungsinformationen.class, "wahlperiode");
+  private final static MethodHandle _FH_wahlperiode = _FC_wahlperiode.dynamicInvoker();
   private final static CallSite _FC_sitzungsNummer = TypeSystemImpl.createCallSite(Sitzungsinformationen.class, "sitzungsNummer");
   private final static MethodHandle _FH_sitzungsNummer = _FC_sitzungsNummer.dynamicInvoker();
+  private final static CallSite _FC_datum = TypeSystemImpl.createCallSite(Sitzungsinformationen.class, "datum");
+  private final static MethodHandle _FH_datum = _FC_datum.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
@@ -109,9 +115,30 @@ public class Sitzungsinformationen extends Annotation {
  
     
   //*--------------*
+  //* Feature: wahlperiode
+
+  /** getter for wahlperiode - gets Die Nummer der Wahlperiode.
+   * @generated
+   * @return value of the feature 
+   */
+  public int getWahlperiode() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_wahlperiode));
+  }
+    
+  /** setter for wahlperiode - sets Die Nummer der Wahlperiode. 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setWahlperiode(int v) {
+    _setIntValueNfc(wrapGetIntCatchException(_FH_wahlperiode), v);
+  }    
+    
+   
+    
+  //*--------------*
   //* Feature: sitzungsNummer
 
-  /** getter for sitzungsNummer - gets Number of the session
+  /** getter for sitzungsNummer - gets Die laufende Nummer der Sitzung.
    * @generated
    * @return value of the feature 
    */
@@ -119,12 +146,33 @@ public class Sitzungsinformationen extends Annotation {
     return _getIntValueNc(wrapGetIntCatchException(_FH_sitzungsNummer));
   }
     
-  /** setter for sitzungsNummer - sets Number of the session 
+  /** setter for sitzungsNummer - sets Die laufende Nummer der Sitzung. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSitzungsNummer(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_sitzungsNummer), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: datum
+
+  /** getter for datum - gets Das Datum der Sitzung.
+   * @generated
+   * @return value of the feature 
+   */
+  public String getDatum() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_datum));
+  }
+    
+  /** setter for datum - sets Das Datum der Sitzung. 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setDatum(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_datum), v);
   }    
     
   }

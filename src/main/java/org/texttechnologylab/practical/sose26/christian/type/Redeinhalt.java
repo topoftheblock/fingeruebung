@@ -1,14 +1,17 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Sat May 02 11:29:55 CEST 2026 */
+/* Apache UIMA v3 - First created by JCasGen Mon May 04 12:30:41 CEST 2026 */
 
 package org.texttechnologylab.practical.sose26.christian.type;
  
 
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 
@@ -16,9 +19,9 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** Content of the speech
- * Updated by JCasGen Sat May 02 11:29:55 CEST 2026
- * XML source: /Users/andreasblock/Desktop/6.Semester/Praktikum/Fingeruebung/target/jcasgen/typesystem.xml
+/** Markiert den eigentlichen Redeinhalt.
+ * Updated by JCasGen Mon May 04 12:30:41 CEST 2026
+ * XML source: /Users/andreasblock/Desktop/6.Semester/Praktikum/fingeruebung/target/jcasgen/typesystem.xml
  * @generated */
 public class Redeinhalt extends Annotation {
  
@@ -49,9 +52,18 @@ public class Redeinhalt extends Annotation {
    *   Feature Offsets *
    * *******************/ 
    
+  public final static String _FeatName_redner = "redner";
+  public final static String _FeatName_tagesordnungspunkt = "tagesordnungspunkt";
+  public final static String _FeatName_redeTyp = "redeTyp";
 
 
   /* Feature Adjusted Offsets */
+  private final static CallSite _FC_redner = TypeSystemImpl.createCallSite(Redeinhalt.class, "redner");
+  private final static MethodHandle _FH_redner = _FC_redner.dynamicInvoker();
+  private final static CallSite _FC_tagesordnungspunkt = TypeSystemImpl.createCallSite(Redeinhalt.class, "tagesordnungspunkt");
+  private final static MethodHandle _FH_tagesordnungspunkt = _FC_tagesordnungspunkt.dynamicInvoker();
+  private final static CallSite _FC_redeTyp = TypeSystemImpl.createCallSite(Redeinhalt.class, "redeTyp");
+  private final static MethodHandle _FH_redeTyp = _FC_redeTyp.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
@@ -100,6 +112,69 @@ public class Redeinhalt extends Annotation {
    */
   private void readObject() {/*default - does nothing empty block */}
      
-}
+ 
+    
+  //*--------------*
+  //* Feature: redner
+
+  /** getter for redner - gets Referenz auf die Person, die diese Rede hält.
+   * @generated
+   * @return value of the feature 
+   */
+  public Redner getRedner() { 
+    return (Redner)(_getFeatureValueNc(wrapGetIntCatchException(_FH_redner)));
+  }
+    
+  /** setter for redner - sets Referenz auf die Person, die diese Rede hält. 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setRedner(Redner v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_redner), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: tagesordnungspunkt
+
+  /** getter for tagesordnungspunkt - gets Der zugehörige Tagesordnungspunkt (TOP).
+   * @generated
+   * @return value of the feature 
+   */
+  public String getTagesordnungspunkt() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_tagesordnungspunkt));
+  }
+    
+  /** setter for tagesordnungspunkt - sets Der zugehörige Tagesordnungspunkt (TOP). 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setTagesordnungspunkt(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_tagesordnungspunkt), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: redeTyp
+
+  /** getter for redeTyp - gets Reguläre Rede, Zwischenruf, etc.
+   * @generated
+   * @return value of the feature 
+   */
+  public String getRedeTyp() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_redeTyp));
+  }
+    
+  /** setter for redeTyp - sets Reguläre Rede, Zwischenruf, etc. 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setRedeTyp(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_redeTyp), v);
+  }    
+    
+  }
 
     
