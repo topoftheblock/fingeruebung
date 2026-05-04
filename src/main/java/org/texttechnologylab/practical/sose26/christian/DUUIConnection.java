@@ -11,7 +11,6 @@ import org.texttechnologylab.DockerUnifiedUIMAInterface.lua.DUUILuaContext;
  * Kapselt die Verbindung zur DUUI-Pipeline.
  * Idee: Wir bauen die Pipeline einmal auf und können dann viele Reden damit verarbeiten.
  * Nutzung der Remote-Services ist stabiler als lokale Container.
- * @author Christian Block und Hamed Noori
  */
 public class DUUIConnection {
 

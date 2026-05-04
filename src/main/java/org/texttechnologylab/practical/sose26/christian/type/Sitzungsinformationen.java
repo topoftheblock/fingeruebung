@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Mon May 04 12:30:41 CEST 2026 */
+/* Apache UIMA v3 - First created by JCasGen Mon May 04 12:50:18 CEST 2026 */
 
 package org.texttechnologylab.practical.sose26.christian.type;
  
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Enthält Metadaten zur aktuellen Sitzung (z.B. Plenarsitzung).
- * Updated by JCasGen Mon May 04 12:30:41 CEST 2026
+ * Updated by JCasGen Mon May 04 12:50:18 CEST 2026
  * XML source: /Users/andreasblock/Desktop/6.Semester/Praktikum/fingeruebung/target/jcasgen/typesystem.xml
  * @generated */
 public class Sitzungsinformationen extends Annotation {

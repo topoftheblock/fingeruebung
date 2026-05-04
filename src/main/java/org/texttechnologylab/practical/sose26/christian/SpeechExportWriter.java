@@ -41,8 +41,6 @@ public class SpeechExportWriter extends JCasAnnotator_ImplBase {
         Map<String, Integer> entityCounts = new HashMap<>();
         for (NamedEntity ne : JCasUtil.select(jCas, NamedEntity.class)) {
             String entityText = ne.getCoveredText().trim();
-            // Optional: Filtern nach bestimmten Typen wie "PER" (Personen) oder "ORG" (Organisationen)
-            // String type = ne.getValue();
 
             if (entityText.length() > 1) { // Ignoriere Rauschen (einzelne Satzzeichen etc.)
                 entityCounts.put(entityText, entityCounts.getOrDefault(entityText, 0) + 1);
