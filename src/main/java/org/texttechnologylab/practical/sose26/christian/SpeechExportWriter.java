@@ -1,5 +1,6 @@
 package org.texttechnologylab.practical.sose26.christian;
 
+import org.apache.uima.fit.descriptor.ConfigurationParameter;
 import org.texttechnologylab.practical.sose26.christian.type.Redeinhalt;
 import de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity;
 import org.hucompute.textimager.uima.type.category.CategoryCoveredTagged;
@@ -17,6 +18,13 @@ import java.util.stream.Collectors;
  * Extrahiert die häufigsten Named Entities und die Top 3 Topics pro Rede.
  */
 public class SpeechExportWriter extends JCasAnnotator_ImplBase {
+
+    /**
+     * Parameter jetzt eingefügt, aber muss noch eingebunden bzw. genutzt werden.
+     */
+    public static final String PARAM_OUTPUT_DIRECTORY = "targetDirectory";
+    @ConfigurationParameter(name = PARAM_OUTPUT_DIRECTORY, description = "Target-Directory")
+    private String targetDirectory;
 
     @Override
     public void process(JCas jCas) throws AnalysisEngineProcessException {

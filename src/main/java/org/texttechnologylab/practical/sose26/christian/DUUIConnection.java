@@ -78,4 +78,4 @@ public class DUUIConnection {
     public boolean isAvailable() {
         return available;
     }
-}}
+}

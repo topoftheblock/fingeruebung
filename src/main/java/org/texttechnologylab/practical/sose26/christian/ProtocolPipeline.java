@@ -15,30 +15,36 @@ public class ProtocolPipeline {
             // 1. Initialize the Reader (reading from data/input/ as seen in your structure)
             CollectionReaderDescription reader = CollectionReaderFactory.createReaderDescription(
                     PlenarprotokollDuurReader.class,
-                    PlenarprotokollDuurReader.PARAM_INPUT_DIR, "data/input/"
+                    PlenarprotokollDuurReader.PARAM_INPUT_DIRECTORY, "data/input/"
             );
 
+            /**
+             * Das ergibt keinen Sinn =)
+             */
             // 2. Initialize the DUUI NLP Processor
             // (Assuming DUUIConnection is implemented as an Analysis Engine)
-            AnalysisEngineDescription duuiProcessor = AnalysisEngineFactory.createEngineDescription(
-                    DUUIConnection.class
-            );
+//            AnalysisEngineDescription duuiProcessor = AnalysisEngineFactory.createEngineDescription(
+//                    DUUIConnection.class
+//            );
 
             // 3. Initialize the Writers
             AnalysisEngineDescription xmiWriter = AnalysisEngineFactory.createEngineDescription(
                     XmiWriter.class,
-                    XmiWriter.PARAM_OUTPUT_DIR, "data/output/xmi/"
+                    XmiWriter.PARAM_OUTPUT_DIRECTORY, "data/output/xmi/"
             );
 
+            /**
+             * Hat keine Parameter
+             */
             AnalysisEngineDescription speechWriter = AnalysisEngineFactory.createEngineDescription(
                     SpeechExportWriter.class,
-                    SpeechExportWriter.PARAM_OUTPUT_DIR, "data/output/speech/"
+                    SpeechExportWriter.PARAM_OUTPUT_DIRECTORY, "data/output/speech/"
             );
 
             // 4. Run the Pipeline
             SimplePipeline.runPipeline(
                     reader,
-                    duuiProcessor,
+//                    duuiProcessor,
                     xmiWriter,
                     speechWriter
             );
