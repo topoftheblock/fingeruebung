@@ -3,7 +3,7 @@
         
     <imports>
                 
-        <import location="file:/Users/andreasblock/Desktop/6.Semester/Praktikum/fingeruebung/src/main/resources/ParliamentTypeSystem.xml"/>
+        <import location="file:/Users/andreasblock/Desktop/6.Semester/Praktikum/fingeruebung/src/main/resources/desc/type/ParliamentTypeSystem.xml"/>
             
     </imports>
     
